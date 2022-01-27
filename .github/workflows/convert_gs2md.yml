@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v2  # git clone (this)
       - name: run
         run: |
-          sed '1d' temp.sh | sed '$d' >README.md
+          cat README.gs | sed '1d' | sed '$d' >README.md
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "shimajima-eiji"
           git add -A
