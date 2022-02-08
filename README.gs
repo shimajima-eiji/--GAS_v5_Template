@@ -1,6 +1,15 @@
 /*
-## 経緯
+## 確認事項
+- リポジトリの公開範囲は正しいか
+- README.gsは書いたか
+  - 最初の行は`¥/*`
+  - 最後の行は`*¥/`
+- GithubActionsは導入したか（システム情報を参照）
+- secretsを設定しているか
+  - EMAIL
+  - GASID(Translate GASID: https://github.com/shimajima-eiji/--GAS_v5_Translate)
 
+## 経緯
 
 ## 主要リンク
 - [リポジトリ](https://github.com/shimajima-eiji/--GAS_v5_)
@@ -8,8 +17,8 @@
 - [Gdrive:スクリプト](https://script.google.com/home)
 - [Gdrive:スプレッドシート](https://docs.google.com/spreadsheets)
 
-## バージョン
-- README: ver1.2022.01.27
+## システムバージョン
+ver1.0.0
 
 ## 制限
 
@@ -26,15 +35,44 @@ function debug_(関数名) {
 ```
 
 ## パラメータ
-### doGet引数
-|リクエストボディ|必須|概要|
-|---|---|---|
+### doGet(ない場合は削除)
+エンドポイントの後に?(キー1)=(値1)&(キー2)=(値2)でパラメータを渡す
 
-### 戻り値
-JSON形式
-|パラメータ|動作|出力例|
-|---|---|---|
+```
+# GASはリダイレクトするので-Lは必須
+curl -X GET -L (エンドポイント)?(パラメータ)
+```
 
-## READMEフォーマットのバージョン
-ver1.2022.01.27
+#### リクエスト
+|キー|キー必須|想定される値|概要|
+|---|-------|---------|---|
+
+#### レスポンス
+レスポンスは([String] or [JSON String] or [JSONS String])形式
+
+|キー|欠損の可能性|想定される値|概要|
+|---|----------|---------|---|
+
+### doPost(ない場合は削除)
+各ライブラリに準拠
+
+#### リクエスト
+|キー|キー必須|想定される値|概要|
+|---|-------|---------|---|
+
+#### レスポンス
+レスポンスは([String] or [JSON String] or [JSONS String])形式
+
+|キー|欠損の可能性|想定される値|概要|
+|---|----------|---------|---|
+
+レスポンスは([String] or [JSON String] or [JSONS String])形式
+
+## システム管理情報
+| システム名称 | 情報 |
+| --- | --- |
+| READMEフォーマットのバージョン | ver2.2022.02.08 |
+| README.gs -> README.md | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/convert_gs2md.yml |
+| translate ja -> en | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/translate_ja2en.yml |
+
 */
