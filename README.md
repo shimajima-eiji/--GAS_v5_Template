@@ -17,7 +17,7 @@
 - [Gdrive:スプレッドシート](https://docs.google.com/spreadsheets)
 
 ## システムバージョン
-ver1.0.0
+ver1.1.0
 
 ## 制限
 
@@ -69,8 +69,7 @@ curl -X GET -L (エンドポイント)?(パラメータ)
 
 ## システム管理情報
 | システム名称 | 情報 |
-| --- | --- |
-| READMEフォーマットのバージョン | ver2.2022.02.08 |
+| --------- | ---- |
+| READMEフォーマットのバージョン | ver3.2022.02.08 |
 | README.gs -> README.md | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/convert_gs2md.yml |
 | translate ja -> en | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/translate_ja2en.yml |
-
