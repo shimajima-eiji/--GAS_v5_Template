@@ -10,9 +10,11 @@
   - GASID(Translate GASID: https://github.com/shimajima-eiji/--GAS_v5_Translate)
 
 ## 経緯
+[Google Apps Script GitHub アシスタント](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=ja)を使って効率の良い開発環境構築支援する。
 
 ## 主要リンク
 - [リポジトリ](https://github.com/shimajima-eiji/--GAS_v5_)
+  - [テンプレート](https://github.com/shimajima-eiji/--GAS_v5_Template)
 - [Gdrive:ディレクトリ](https://drive.google.com/drive/my-drive)
 - [Gdrive:スクリプト](https://script.google.com/home)
 - [Gdrive:スプレッドシート](https://docs.google.com/spreadsheets)
@@ -25,7 +27,7 @@ ver1.0.0
 
 ## 環境変数
 |key|value|用途|備考|
-|---|---|---|---|
+|---|-----|---|----|
 
 ## デバッガ
 ```
@@ -70,8 +72,8 @@ curl -X GET -L (エンドポイント)?(パラメータ)
 
 ## システム管理情報
 | システム名称 | 情報 |
-| --- | --- |
-| READMEフォーマットのバージョン | ver2.2022.02.08 |
+| --------- | ---- |
+| READMEフォーマットのバージョン | ver4.2022.02.08 |
 | README.gs -> README.md | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/convert_gs2md.yml |
 | translate ja -> en | https://github.com/shimajima-eiji/--GAS_v5_Template/blob/main/.github/workflows/translate_ja2en.yml |
 
